@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE LCD CLOCK + WEATHER API</title>
+    <link rel = "stylesheet" href = "clockstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <main>
+        <div class = "screen">
+            <p class = "clock"></p>
+            <p class = "today">
+                <span class = "day">Mon</span>
+                <span class = "day">Tue</span>
+                <span class = "day">Wed</span>
+                <span class = "day">Thu</span>
+                <span class = "day">Fri</span> 
+                <span class = "day">Sat</span>
+                <span class = "day">Sun</span>
+            </p>     
+        </div>
+        <div class="weather">
+            <p class = "search">Search for another city</p> 
+            <p><input type="text" class = "newCity"><button class = "searchIcon"><i class="fa fa-search" style="font-size:150%"></i></button></p>
+            <p class = "title">Weather in city <span class = "cityName">Wladyslawowo</span></p>
+            <p class = "desc"></p>
+            <p class = "iconHolder"> <img class = "icon"></p>
+            <p class = "tempHolder">Temperature: <span class = "temp"></span></p>
+            <p class = "windHolder">Wind speed: <span class = "wind"></span></p>
+            <p class = "presHolder">Pressure: <span class = "pres"></span></p>
+        </div>
+    </main>
+
+
+    <script src = "lcd.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

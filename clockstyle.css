@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 25%;
+}
+
+.clock{
+    font-size: 600%;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 2vh;
+    width: 50%;
+    color:#0CA8FA;
+    animation: glitch 1s linear infinite;
+}
+@keyframes glitch{
+    1%,64%{
+      transform: translate(2px,0) skew(0deg);
+      color:white;
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+      color:#0CA8FA;
+    }
+    62%{
+      transform: translate(+2px,0) skew(5deg); 
+    }
+  }
+  
+.clock:hover{
+    color:white;
+    transition: all 0.5s;
+}
+.day:hover{
+    color:#75F4FA;
+    transition: all 0.5s
+}
+.today{
+    text-align: right;
+    font-size: 300%;
+}
+
+.activeDay{
+    color: #0CA8FA
+}
+
+.weather{
+  align-self:center;
+}
+.title{
+    font-size: 400%;
+    text-align: center;
+}
+.tempHolder, .windHolder, .presHolder{
+    font-size: 300%;
+}
+.temp, .wind, .pres{
+    font-size: 150%;
+    color: #0CA8FA
+}
+.temp:hover, .wind:hover, .pres:hover, .tempHolder:hover, .windHolder:hover, .presHolder:hover{
+    color: #FFF714;
+    transition: all 0.5s
+}
+.desc{
+    color:#FFF714;
+    font-size: 150%
+}
+.icon{
+    width: 75px;
+}
+.searchIcon{
+    width: 75px;
+    vertical-align: middle;
+    padding:20px;
+    cursor:pointer;
+    margin-left: 2%;
+    border-radius: 25%;
+    background-color: #0CA8FA;
+}
+.searchIcon:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+
+.cityName{
+    color:#0CA8FA;
+}
+.newCity{
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding:15px;
+}
+.newCity:hover{
+    background-color:grey;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
